@@ -5,7 +5,7 @@ class SimpleGame {
   game: Phaser.Game;
 
   constructor() {
-    this.game = new Phaser.Game({
+    const config: Phaser.Types.Core.GameConfig = {
       width: 800,
       height: 600,
       type: Phaser.AUTO,
@@ -13,7 +13,9 @@ class SimpleGame {
       scene: [Main, Stage],
       title: "A Game",
       version: "0.1",
-    });
+    };
+
+    this.game = new Phaser.Game(config);
   }
 }
 
