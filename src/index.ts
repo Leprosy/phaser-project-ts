@@ -1,5 +1,5 @@
 import Phaser from "phaser";
-import { Main } from "./scenes";
+import { Main, Stage } from "./scenes/";
 
 console.log("ok", Phaser);
 
@@ -12,7 +12,7 @@ class SimpleGame {
       height: 600,
       type: Phaser.AUTO,
       parent: "content",
-      scene: [Main],
+      scene: [Main, Stage],
     });
   }
 }
