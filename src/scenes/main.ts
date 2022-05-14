@@ -19,9 +19,9 @@ export class Main extends Phaser.Scene {
   create() {
     // Display something
     const logo = this.add.image(400, 100, "logo");
-    const text1 = this.add.bitmapText(400, 200, "font", "This is a\ndemo game").setOrigin(0.5);
+    const text1 = this.add.bitmapText(400, 200, "font", this.game.config.gameTitle).setOrigin(0.5);
     const text2 = this.add.bitmapText(400, 300, "font", "Press <Space>").setOrigin(0.5).setTint(0xff0066);
-    this.add.text(400, 500, "Version 1.0 " + new Date(), textStyles.debug).setOrigin(0.5);
+    this.add.text(400, 500, `Version ${this.game.config.gameVersion} ${new Date()}`, textStyles.debug).setOrigin(0.5);
 
     // Animations
     this.tweens.add({

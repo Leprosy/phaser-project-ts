@@ -1,8 +1,6 @@
 import Phaser from "phaser";
 import { Main, Stage } from "./scenes/";
 
-console.log("ok", Phaser);
-
 class SimpleGame {
   game: Phaser.Game;
 
@@ -13,6 +11,8 @@ class SimpleGame {
       type: Phaser.AUTO,
       parent: "content",
       scene: [Main, Stage],
+      title: "A Game",
+      version: "0.1",
     });
   }
 }

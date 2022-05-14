@@ -12,7 +12,9 @@ export class Stage extends Phaser.Scene {
   preload() {}
 
   create() {
-    const text = this.add.text(100, 400, "We are in the first Stage", textStyles.debug);
+    const logo = this.add.image(400, 100, "logo");
+    const text1 = this.add.bitmapText(400, 200, "font", this.game.config.gameTitle).setOrigin(0.5);
+    const text2 = this.add.bitmapText(400, 300, "font", "We are in\nthe first stage").setOrigin(0.5).setTint(0x0000dd).setCenterAlign();
     this.keys["space"] = this.input.keyboard.addKey("SPACE");
   }
 
