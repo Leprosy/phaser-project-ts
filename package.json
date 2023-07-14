@@ -6,7 +6,7 @@
   "scripts": {
     "test": "npx jest --coverage=true",
     "ts": "npx tsc --noEmit",
-    "server": "npx parcel src/index.html"
+    "server": "npx parcel src/index.html --open"
   },
   "author": "",
   "license": "ISC",
