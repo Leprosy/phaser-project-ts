@@ -9,7 +9,7 @@ export class Stage extends Phaser.Scene {
     this.keys = [];
   }
 
-  preload() {}
+  preload() { }
 
   create() {
     const logo = this.add.image(400, 100, "logo");
