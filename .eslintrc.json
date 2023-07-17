@@ -16,6 +16,9 @@
         "@typescript-eslint"
     ],
     "rules": {
+        "@typescript-eslint/no-explicit-any": "warn",
+        "arrow-spacing": "warn",
+        "no-unused-expressions": "warn",
         "space-infix-ops": "warn",
         "semi-spacing": "warn",
         "keyword-spacing": "warn",
